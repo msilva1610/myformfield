@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Uploaded Files</title>
+  </head>
+  <body>
+    <h1>Uploaded Files:</h1>
+    {% for obj in documents%}
+      <ul>
+          <li> <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
+          <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+          </li>
+      </ul>
+    {% endfor %}
+  </body>
+</html>

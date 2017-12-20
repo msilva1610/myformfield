@@ -1,0 +1,8 @@
+{% extends "myform/base.html" %}
+{% block content %}
+  <h1>Formulário</h1>
+  <form method="post">
+    {% csrf_token %}
+
+  </form>
+{% endblock %}
